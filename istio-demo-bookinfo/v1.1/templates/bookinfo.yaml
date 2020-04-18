@@ -37,6 +37,10 @@ metadata:
     version: v1
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: ratings
+      version: v1 
   template:
     metadata:
       labels:
